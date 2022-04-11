@@ -207,7 +207,7 @@ title.BorderColor3 = Color3.fromRGB(111, 255, 103)
 title.Size = UDim2.new(0, 104, 0, 15)
 title.Font = Enum.Font.SourceSans
 title.TextScaled = true
-title.Text = "TPWALK V5 (Z + X)"
+title.Text = "TPWALK V5 (C + V)"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
