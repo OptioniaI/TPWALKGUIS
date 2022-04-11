@@ -40,7 +40,7 @@ enable.MouseButton1Click:Connect(function()
 
     game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
     	if gpe then return end
-    	if inp.KeyCode == Enum.KeyCode.R then
+    	if inp.KeyCode == Enum.KeyCode.Z then
         _G.LOOP1 = true
             while _G.LOOP1 == true do
                 task.wait()
@@ -51,7 +51,7 @@ enable.MouseButton1Click:Connect(function()
 
     game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
     	if gpe then return end
-    	if inp.KeyCode == Enum.KeyCode.F then
+    	if inp.KeyCode == Enum.KeyCode.X then
         _G.LOOP1 = false
             while _G.LOOP1 == true do
                 task.wait()
