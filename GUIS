@@ -22,7 +22,8 @@ title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 title.BorderColor3 = Color3.fromRGB(111, 255, 103)
 title.Size = UDim2.new(0, 104, 0, 15)
 title.Font = Enum.Font.SourceSans
-title.Text = "TPWALK V2"
+title.TextScaled = true
+title.Text = "TPWALK V2 (Z + X)"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
@@ -85,7 +86,8 @@ title.BackgroundColor3 = Color3.fromRGB(115, 115, 155)
 title.BorderColor3 = Color3.fromRGB(111, 255, 103)
 title.Size = UDim2.new(0, 104, 0, 15)
 title.Font = Enum.Font.SourceSans
-title.Text = "TPWalk V3"
+title.TextScaled = true
+title.Text = "TPWalk V3 (R + T)"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
@@ -144,7 +146,8 @@ title.BackgroundColor3 = Color3.fromRGB(115, 155, 115)
 title.BorderColor3 = Color3.fromRGB(111, 255, 103)
 title.Size = UDim2.new(0, 104, 0, 15)
 title.Font = Enum.Font.SourceSans
-title.Text = "TPWalk V4"
+title.TextScaled = true
+title.Text = "TPWalk V4 (Q + E)"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 14.000
 
