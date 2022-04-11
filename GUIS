@@ -1,0 +1,180 @@
+local TPWalkV2 = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local enable = Instance.new("ImageButton")
+
+TPWalkV2.Name = "TPWalkV2"
+TPWalkV2.Parent = game.CoreGui
+TPWalkV2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = TPWalkV2
+main.Active = true
+main.Draggable = true
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.597835124, 0, 0.31572482, 0)
+main.Size = UDim2.new(0, 104, 0, 63)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+title.BorderColor3 = Color3.fromRGB(111, 255, 103)
+title.Size = UDim2.new(0, 104, 0, 15)
+title.Font = Enum.Font.SourceSans
+title.Text = "TPWALK V2"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+enable.Name = "enable"
+enable.Parent = main
+enable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+enable.BackgroundTransparency = 1.000
+enable.Position = UDim2.new(0.336538464, 0, 0.365079373, 0)
+enable.Size = UDim2.new(0, 34, 0, 33)
+enable.Image = "rbxassetid://6810154708"
+
+enable.MouseButton1Click:Connect(function()
+    local plr = game.Players.LocalPlayer.Character
+    local hrp = plr.HumanoidRootPart
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.R then
+        _G.LOOP1 = true
+            while _G.LOOP1 == true do
+                task.wait()
+                hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 0.4
+            end
+    	end
+    end)
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.F then
+        _G.LOOP1 = false
+            while _G.LOOP1 == true do
+                task.wait()
+                hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 0.4
+            end
+    	end
+    end)
+end)
+
+local TPWalkV3 = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local enable = Instance.new("ImageButton")
+
+TPWalkV3.Name = "TPWalkV3"
+TPWalkV3.Parent = game.CoreGui
+TPWalkV3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = TPWalkV3
+main.Active = true
+main.Draggable = true
+main.BackgroundColor3 = Color3.fromRGB(115, 115, 155)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.597835124, 0, 0.4, 0)
+main.Size = UDim2.new(0, 104, 0, 63)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(115, 115, 155)
+title.BorderColor3 = Color3.fromRGB(111, 255, 103)
+title.Size = UDim2.new(0, 104, 0, 15)
+title.Font = Enum.Font.SourceSans
+title.Text = "TPWalk V3"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+enable.Name = "enable"
+enable.Parent = main
+enable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+enable.BackgroundTransparency = 1.000
+enable.Position = UDim2.new(0.336538464, 0, 0.365079373, 0)
+enable.Size = UDim2.new(0, 34, 0, 33)
+enable.Image = "rbxassetid://6810154708"
+
+enable.MouseButton1Click:Connect(function()
+    local plr = game.Players.LocalPlayer.Character
+    local hrp = plr.HumanoidRootPart
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.R then
+        _G.TPOP = true
+            while _G.TPOP == true do
+                task.wait(0.5)
+                hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 18.5
+            end
+    	end
+    end)
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.T then
+            _G.TPOP = false
+    	end
+    end)
+end)
+
+local TPWalkV4 = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local enable = Instance.new("ImageButton")
+
+TPWalkV4.Name = "TPWalkV4"
+TPWalkV4.Parent = game.CoreGui
+TPWalkV4.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = TPWalkV4
+main.Active = true
+main.Draggable = true
+main.BackgroundColor3 = Color3.fromRGB(115, 155, 115)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.7, 0, 0.31572482, 0)
+main.Size = UDim2.new(0, 104, 0, 63)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(115, 155, 115)
+title.BorderColor3 = Color3.fromRGB(111, 255, 103)
+title.Size = UDim2.new(0, 104, 0, 15)
+title.Font = Enum.Font.SourceSans
+title.Text = "TPWalk V4"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+enable.Name = "enable"
+enable.Parent = main
+enable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+enable.BackgroundTransparency = 1.000
+enable.Position = UDim2.new(0.336538464, 0, 0.365079373, 0)
+enable.Size = UDim2.new(0, 34, 0, 33)
+enable.Image = "rbxassetid://6810154708"
+
+enable.MouseButton1Click:Connect(function()
+    local plr = game.Players.LocalPlayer.Character
+    local hrp = plr.HumanoidRootPart
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.Q then
+        _G.LOOP3 = true
+            while _G.LOOP3 == true do
+                task.wait(1)
+                hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 50
+            end
+    	end
+    end)
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.E then
+            _G.LOOP3 = false
+    	end
+    end)
+end)
