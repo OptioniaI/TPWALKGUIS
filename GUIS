@@ -181,3 +181,63 @@ enable.MouseButton1Click:Connect(function()
     	end
     end)
 end)
+
+local TPWalkV5 = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local enable = Instance.new("ImageButton")
+
+TPWalkV5.Name = "TPWalkV5"
+TPWalkV5.Parent = game.CoreGui
+TPWalkV5.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = TPWalkV5
+main.Active = true
+main.Draggable = true
+main.BackgroundColor3 = Color3.fromRGB(255, 155, 115)
+main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.597835124, 0, 0.31572482, 0)
+main.Size = UDim2.new(0, 104, 0, 63)
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 155, 115)
+title.BorderColor3 = Color3.fromRGB(111, 255, 103)
+title.Size = UDim2.new(0, 104, 0, 15)
+title.Font = Enum.Font.SourceSans
+title.TextScaled = true
+title.Text = "TPWALK V5 (Z + X)"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+enable.Name = "enable"
+enable.Parent = main
+enable.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+enable.BackgroundTransparency = 1.000
+enable.Position = UDim2.new(0.336538464, 0, 0.365079373, 0)
+enable.Size = UDim2.new(0, 34, 0, 33)
+enable.Image = "rbxassetid://6810154708"
+
+enable.MouseButton1Click:Connect(function()
+    local plr = game.Players.LocalPlayer.Character
+    local hrp = plr.HumanoidRootPart
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.C then
+        _G.LOOP5 = true
+            while _G.LOOP5 == true do
+                task.wait(0.35)
+                hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 5
+            end
+    	end
+    end)
+
+    game:GetService("UserInputService").InputBegan:connect(function(inp,gpe)
+    	if gpe then return end
+    	if inp.KeyCode == Enum.KeyCode.V then
+            _G.LOOP5 = false
+    	end
+    end)
+end)
