@@ -165,7 +165,7 @@ enable.MouseButton1Click:Connect(function()
     	if inp.KeyCode == Enum.KeyCode.Q then
         _G.LOOP3 = true
             while _G.LOOP3 == true do
-                task.wait(1)
+                task.wait(1.060)
                 hrp.CFrame = hrp.CFrame + hrp.CFrame.LookVector * 50
             end
     	end
